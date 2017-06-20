@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id="app">
+		<h1>{{fullname}}</h1>
+		<input v-model="first">
+		<input v-model="last">
+</div>
+		<script src="https://unpkg.com/vue@2.3.4/dist/vue.js">
+		</script>
+		<script>
+			new Vue({
+				el:'#app',
+				data:{
+					first:'parth',
+					last:'shah',
+					fullname:'parth shah'
+				},
+				watch:{
+					first: function(first){
+						this.fullname=first+''+this.last;
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
+		
+	
+		

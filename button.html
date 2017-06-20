@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id="app">
+			<form action="b.html" v-on:submit="meth">
+				<center>
+					<button type="submit">
+						submit me!
+					</button>
+				</center>
+			</form>
+		</div>
+		<script src="https://unpkg.com/vue@2.3.4/dist/vue.js">
+		</script>
+		<script>
+			new Vue({
+				el:'#app',
+				methods:{meth:  function()
+				{
+					alert('submitted');
+				}}
+
+			});
+		</script>
+	</body>
+</html>
+		
